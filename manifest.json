@@ -1,0 +1,35 @@
+{
+
+  "manifest_version": 2,
+  "name": "Willow",
+  "version": "1.0",
+  "author": "Arthur Embleton",
+
+  "description": "Redirects certain domains so that their pages are more readable.",
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "storage"
+  ],
+
+  "background": {
+    "scripts": ["willow.js"]
+  },
+  "icons": {
+    "48": "leaf.svg",
+    "96": "leaf.svg"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true,
+    "chrome_style": true
+},
+"applications": {
+  "gecko": {
+    "id": "willow@blerg.net"
+  }
+}
+
+}
